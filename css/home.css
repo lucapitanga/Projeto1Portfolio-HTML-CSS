@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Macondo', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.appbar {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.appbar-imagem {
+  flex-grow: 1;
+}
+
+.imagem {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.appbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.appbar-menu-item {
+  text-decoration: none;
+  color: black;
+}
+
+.appbar-menu-item:hover {
+  color: #6b6b6b;
+}
+
+main {
+  width: 100%;
+}
+
+.conteudo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.conteudo-titulo {
+  font-family: 'Raleway', sans-serif;
+  color: #616161;
+}
+
+.conteudo-nome {
+  margin-top: 10px;
+  font-size: 64px;
+}
+
+.conteudo-formacao {
+  margin-top: 5px;
+}
+
+.conteudo-info {
+  margin-top: 15px;
+}
+
+ footer {
+  position: absolute;
+  height: 64px;
+  left: 0;
+  bottom: 0;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.rodape {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rodape-arroba {
+  flex-grow: 1;
+}
+
+.arroba {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.arroba:hover {
+  color: #6b6b6b;
+}
+
+.rodape-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.rodape-menu-item {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.rodape-menu-item:hover {
+  color: #6b6b6b;
+}
+
+@media (max-width: 480px) {
+  .imagem {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .appbar-menu-item {
+    font-size: 12px;
+  }
+  
+  .appbar {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  .conteudo {
+    margin-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .conteudo-titulo {
+    font-size: 14px;
+  }
+
+  .conteudo-nome {
+    font-size: 40px;
+  }
+  
+  .conteudo-formacao {
+    font-size: 24px;
+  }
+
+  .conteudo-info {
+    font-size: 15px;
+  }
+
+  footer {
+    position: absolute;
+  }
+
+  .rodape {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 10px;
+  }
+
+  .rodape-arroba {
+    display: none;
+  }
+
+  .arroba {
+    font-size: 10px;
+  }
+
+  .rodape-menu {
+    margin: auto;
+    margin-top: 14px;
+  }
+
+  .rodape-menu-item {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 481px) {
+  .appbar {
+    width: 1100px;
+  }
+
+  .conteudo {
+    width: 900px;
+  }
+
+  .rodape {
+    width: 1100px;
+  }
+}
